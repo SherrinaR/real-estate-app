@@ -14,7 +14,7 @@ const SearchFilters = () => {
 
     /* Update property state */
     const searchProperties = (filterValues) => {
-        /*update url when state changes */
+        /*update url when the state changes */
         const path = router.pathname;
         const { query } = router;
 
@@ -27,7 +27,6 @@ const SearchFilters = () => {
         })
 
         router.push({ pathname: path, query: query });
-    
     };
 
     return (
